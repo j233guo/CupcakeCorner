@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C989270B28B54DB4009B6FB4 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C989270A28B54DB4009B6FB4 /* CheckoutView.swift */; };
 		C9A954BA28B4258A0036CCD5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A954B928B4258A0036CCD5 /* Order.swift */; };
 		C9A954BC28B42E720036CCD5 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A954BB28B42E720036CCD5 /* AddressView.swift */; };
 		C9B0ECA828B3139E00513E44 /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0ECA728B3139E00513E44 /* CupcakeCornerApp.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C989270A28B54DB4009B6FB4 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		C9A954B928B4258A0036CCD5 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		C9A954BB28B42E720036CCD5 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		C9B0ECA428B3139E00513E44 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 			children = (
 				C9B0ECA928B3139E00513E44 /* ContentView.swift */,
 				C9A954BB28B42E720036CCD5 /* AddressView.swift */,
+				C989270A28B54DB4009B6FB4 /* CheckoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				C9A954BA28B4258A0036CCD5 /* Order.swift in Sources */,
 				C9A954BC28B42E720036CCD5 /* AddressView.swift in Sources */,
+				C989270B28B54DB4009B6FB4 /* CheckoutView.swift in Sources */,
 				C9B0ECAA28B3139E00513E44 /* ContentView.swift in Sources */,
 				C9B0ECA828B3139E00513E44 /* CupcakeCornerApp.swift in Sources */,
 			);
