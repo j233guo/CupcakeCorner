@@ -34,7 +34,7 @@ class CupcakeCornerTests: XCTestCase {
     }
     
     func testOrderHasValidAddress() throws {
-        let order = Order()
+        var order = OrderInfo()
         order.streetAddress = ""
         order.city = ""
         order.postal = ""
