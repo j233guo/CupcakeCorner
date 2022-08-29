@@ -27,7 +27,11 @@ class Order: ObservableObject, Codable {
     @Published var postal = ""
     
     var hasValidAddress: Bool {
-        if name.isEmpty || streetAddress.isEmpty || streetAddress.isEmpty || postal.isEmpty {
+        func empty(_ string : String) -> Bool {
+            return string.isEmpty || string.trimmingCharacters(in: .whitespaces).isEmpty
+        }
+        
+        if empty(name) || empty(streetAddress) || empty(city) || empty(postal) {
             return false
         }
         return true

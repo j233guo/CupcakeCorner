@@ -11,6 +11,7 @@ struct CheckoutView: View {
     @ObservedObject var order: Order
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
+    @State private var showingErrorAlert = false
     
     func placeOrder() async {
         guard let encoded = try? JSONEncoder().encode(order) else {
@@ -27,7 +28,7 @@ struct CheckoutView: View {
             confirmationMessage = "Your order for \(decodedOrder.quantity) \(Order.types[decodedOrder.type].lowercased()) cupcakes is on its way!"
             showingConfirmation = true
         } catch {
-            print("Checkout failed.")
+            showingErrorAlert = true
         }
     }
     
@@ -60,6 +61,11 @@ struct CheckoutView: View {
             Button("OK") { }
         } message: {
             Text(confirmationMessage)
+        }
+        .alert("Sorry", isPresented: $showingErrorAlert) {
+            Button("OK") { }
+        } message: {
+            Text("There has been an error in placing your order. ")
         }
         .navigationTitle("Check out")
         .navigationBarTitleDisplayMode(.inline)
