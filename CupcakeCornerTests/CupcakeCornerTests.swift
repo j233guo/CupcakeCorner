@@ -32,5 +32,18 @@ class CupcakeCornerTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+    func testOrderHasValidAddress() throws {
+        let order = Order()
+        order.streetAddress = ""
+        order.city = ""
+        order.postal = ""
+        order.name = ""
+        XCTAssertFalse(order.hasValidAddress)
+        order.streetAddress = "  "
+        order.city = "  "
+        order.postal = "  "
+        order.name = "  "
+        XCTAssertFalse(order.hasValidAddress)
+    }
 }
